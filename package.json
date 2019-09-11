@@ -1,0 +1,37 @@
+{
+    "name": "nodejs-api-jobs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "node ./app.js",
+        "test": "SET NODE_ENV=test mocha --timeout 15000  --recursive tests -u tdd --exit",
+        "test-windows": "SET NODE_ENV=test&&mocha --timeout 15000  --recursive tests -u tdd --exit",
+        "coverage": "SET NODE_ENV=test&&nyc --reporter=html --reporter=text npm test"
+    },
+    "author": "tubagus99",
+    "email": "anwartubagus@gmail.com",
+    "license": "MIT",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "bluebird": "^3.5.5",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "cron": "^1.7.2",
+        "elasticsearch": "^16.3.0",
+        "express": "^4.17.1",
+        "jsonwebtoken": "^8.5.1",
+        "method-override": "^3.0.0",
+        "mongoose": "^5.5.14",
+        "mongoose-deep-populate": "^3.1.1",
+        "morgan": "^1.9.1",
+        "path": "^0.12.7",
+        "redis": "^2.8.0",
+        "validator": "^11.0.0"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "chai-http": "^4.2.1",
+        "sinon": "^7.2.3",
+        "supertest": "^4.0.2"
+    }
+}
